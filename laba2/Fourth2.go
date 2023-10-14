@@ -15,7 +15,7 @@ import (
 )
 
 func main() {
-	house1 := house{
+	house1 := House{
 		ceilingHeight: 260,
 		square:        45,
 		numRooms:      3,
@@ -26,7 +26,7 @@ func main() {
 	house1.showHouse()
 }
 
-type house struct {
+type House struct {
 	family        []string
 	furniture     []string
 	tech          []string
@@ -35,7 +35,7 @@ type house struct {
 	numRooms      int
 }
 
-func (h house) showHouse() {
+func (h House) showHouse() {
 	fmt.Println("Площадь кв. = ", h.square, "кв.м")
 	fmt.Println("Высота потолка = ", h.ceilingHeight, "см")
 	fmt.Println("Количество комнат = ", h.numRooms)
