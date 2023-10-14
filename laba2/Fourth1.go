@@ -37,7 +37,7 @@ func (h house) showHouse() {
 	fmt.Println("Высота потолка = ", h.ceilingHeight, "см")
 	fmt.Println("Количество комнат = ", h.numRooms, "\n")
 
-	fmt.Println("Мебель в доме: \n")
+	fmt.Println("Мебель в доме: ")
 	for index, furniture := range h.furniture {
 		fmt.Println(index+1, furniture)
 	}
@@ -49,7 +49,7 @@ func (h house) showHouse() {
 	}
 	fmt.Println("\n")
 
-	fmt.Println("Жильцы: \n")
+	fmt.Println("Жильцы: ")
 	for index, family := range h.family {
 		fmt.Println(index+1, family)
 	}
