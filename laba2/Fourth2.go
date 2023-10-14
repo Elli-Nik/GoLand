@@ -42,5 +42,4 @@ func (h House) showHouse() {
 	fmt.Println("Мебель в доме: ", strings.Trim(fmt.Sprint(h.furniture), "[]\n"))
 	fmt.Println("Техника: ", strings.Trim(fmt.Sprint(h.tech), "[]\n"))
 	fmt.Println("Жильцы: ", strings.Trim(fmt.Sprint(h.family), "[]"))
-
 }
