@@ -27,6 +27,7 @@ func FillRoomsSizes() []RoomsSizes {
 
 func ShowRoomsSizes(RoomsSizes []RoomsSizes) {
 	for _, RoomsSizes1 := range RoomsSizes {
-		fmt.Printf("%s\n %i\n", RoomsSizes1.name, RoomsSizes1.value)
+		fmt.Printf("%s\n %d\n", RoomsSizes1.name, RoomsSizes1.value)
 	}
+	fmt.Print("\n")
 }

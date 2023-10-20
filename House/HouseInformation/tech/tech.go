@@ -30,4 +30,5 @@ func ShowTech(Tech []Tech) {
 	for _, tech := range Tech {
 		fmt.Printf("- %s\n", tech.name)
 	}
+	fmt.Print("\n")
 }

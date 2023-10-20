@@ -26,8 +26,9 @@ func FillFurniture() []Furniture {
 }
 
 func ShowFurniture(Furniture []Furniture) {
-	fmt.Printf("Жильцы в доме:\n")
+	fmt.Printf("Мебель в доме:\n")
 	for _, furniture := range Furniture {
 		fmt.Printf(" Название - %s\n", furniture.name)
 	}
+	fmt.Print("\n")
 }

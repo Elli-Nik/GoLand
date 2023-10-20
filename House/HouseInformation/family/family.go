@@ -30,6 +30,7 @@ func FillFamily() []Family {
 func ShowFamily(Family []Family) {
 	fmt.Printf("Жильцы в доме:\n")
 	for _, members := range Family {
-		fmt.Printf("Имя - %s\n Возраст - %i\n Кем является - %s\n", members.name, members.age, members.qualification)
+		fmt.Printf("Имя - %s\n Возраст - %d\n Кем является - %s\n", members.name, members.age, members.qualification)
 	}
+	fmt.Print("\n")
 }
