@@ -1,4 +1,4 @@
-package FullHouse
+package fullHouse
 
 import (
 	"House/HouseInformation/family"
