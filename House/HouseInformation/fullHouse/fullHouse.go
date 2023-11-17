@@ -9,13 +9,20 @@ import (
 
 func FullHouse() {
 	Family := family.FillFamily()
-	Furniture := furniture.FillFurniture()
 	Tech := tech.FillTech()
 	RoomsSizes := roomsAndsizes.FillRoomsSizes()
+	Sofa := furniture.FillSofa()
+	Chair := furniture.FillChair()
+	Table := furniture.FillTable()
+	Wardrobe := furniture.FillWardrobe()
+	Lamp := furniture.FillLamp()
 
 	family.ShowFamily(Family)
-	furniture.ShowFurniture(Furniture)
 	tech.ShowTech(Tech)
 	roomsAndsizes.ShowRoomsSizes(RoomsSizes)
-
+	furniture.ShowSofa(Sofa)
+	furniture.ShowChair(Chair)
+	furniture.ShowTable(Table)
+	furniture.ShowWardrobe(Wardrobe)
+	furniture.ShowLamp(Lamp)
 }

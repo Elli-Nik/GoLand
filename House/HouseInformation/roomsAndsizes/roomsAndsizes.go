@@ -10,24 +10,16 @@ type RoomsSizes struct {
 }
 
 func FillRoomsSizes() []RoomsSizes {
-	ceiling := RoomsSizes{
-		name:  "Высота потолков, см: ",
-		value: 260,
-	}
-	square := RoomsSizes{
-		name:  "Площадь, кв.м: ",
-		value: 50,
-	}
-	numRooms := RoomsSizes{
-		name:  "Количество комнат: ",
-		value: 3,
-	}
+	ceiling := RoomsSizes{"Высота потолков, см: ", 260}
+	square := RoomsSizes{"Площадь, кв.м: ", 50}
+	numRooms := RoomsSizes{name: "Количество комнат: ", value: 3}
+
 	return []RoomsSizes{ceiling, square, numRooms}
 }
 
 func ShowRoomsSizes(RoomsSizes []RoomsSizes) {
-	for _, RoomsSizes1 := range RoomsSizes {
-		fmt.Printf("%s\n %d\n", RoomsSizes1.name, RoomsSizes1.value)
+	for _, roomsSizes1 := range RoomsSizes {
+		fmt.Printf("%s\n %d\n", roomsSizes1.name, roomsSizes1.value)
 	}
 	fmt.Print("\n")
 }
